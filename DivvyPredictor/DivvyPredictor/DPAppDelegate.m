@@ -14,6 +14,7 @@
 {
     // Override point for customization after application launch.
     [GMSServices provideAPIKey:kGoogleAPIKey];
+//    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navigationBarBackgroundRetro"] forBarMetrics:UIBarMetricsDefault];
     return YES;
 }
 							
