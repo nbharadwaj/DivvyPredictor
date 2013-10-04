@@ -44,6 +44,13 @@
 		735B148C17FE5DDA00DC611E /* GMSMarkerOptions+MarkerType.m in Sources */ = {isa = PBXBuildFile; fileRef = 735B148B17FE5DDA00DC611E /* GMSMarkerOptions+MarkerType.m */; };
 		735B149017FE611500DC611E /* ios7_atm_orange_pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 735B148E17FE611500DC611E /* ios7_atm_orange_pin.png */; };
 		735B149117FE611500DC611E /* ios7_atm_orange_pin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 735B148F17FE611500DC611E /* ios7_atm_orange_pin@2x.png */; };
+		735B14A617FE8A3D00DC611E /* BaseMapPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 735B14A017FE8A3D00DC611E /* BaseMapPopoverView.m */; };
+		735B14A717FE8A3D00DC611E /* BaseMapPopoverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 735B14A117FE8A3D00DC611E /* BaseMapPopoverView.xib */; };
+		735B14A817FE8A3D00DC611E /* DPGoogleMapsInfoWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 735B14A417FE8A3D00DC611E /* DPGoogleMapsInfoWindow.m */; };
+		735B14A917FE8A3D00DC611E /* DPGoogleMapsInfoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 735B14A517FE8A3D00DC611E /* DPGoogleMapsInfoWindow.xib */; };
+		735B14AD17FE8B5700DC611E /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 735B14AC17FE8B5700DC611E /* UIView+Utils.m */; };
+		735B14B017FE9AFC00DC611E /* navigationBarBackgroundRetro.png in Resources */ = {isa = PBXBuildFile; fileRef = 735B14AE17FE9AFC00DC611E /* navigationBarBackgroundRetro.png */; };
+		735B14B117FE9AFC00DC611E /* navigationBarBackgroundRetro@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 735B14AF17FE9AFC00DC611E /* navigationBarBackgroundRetro@2x.png */; };
 		83EFAA7C0BC949C99E73A4F0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC38900F59F24241ACD5C214 /* libPods.a */; };
 		C9B6726617FE8BD600A41077 /* GTLPredictionAnalyze.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B6725817FE8BD600A41077 /* GTLPredictionAnalyze.m */; };
 		C9B6726717FE8BD600A41077 /* GTLPredictionConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B6725A17FE8BD600A41077 /* GTLPredictionConstants.m */; };
@@ -178,6 +185,17 @@
 		735B148B17FE5DDA00DC611E /* GMSMarkerOptions+MarkerType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GMSMarkerOptions+MarkerType.m"; sourceTree = "<group>"; };
 		735B148E17FE611500DC611E /* ios7_atm_orange_pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ios7_atm_orange_pin.png; path = Assets/ios7_atm_orange_pin.png; sourceTree = "<group>"; };
 		735B148F17FE611500DC611E /* ios7_atm_orange_pin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ios7_atm_orange_pin@2x.png"; path = "Assets/ios7_atm_orange_pin@2x.png"; sourceTree = "<group>"; };
+		735B149F17FE8A3D00DC611E /* BaseMapPopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseMapPopoverView.h; path = UI/GoogleMapsInfoWindow/BaseMapPopoverView.h; sourceTree = "<group>"; };
+		735B14A017FE8A3D00DC611E /* BaseMapPopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseMapPopoverView.m; path = UI/GoogleMapsInfoWindow/BaseMapPopoverView.m; sourceTree = "<group>"; };
+		735B14A117FE8A3D00DC611E /* BaseMapPopoverView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BaseMapPopoverView.xib; path = UI/GoogleMapsInfoWindow/BaseMapPopoverView.xib; sourceTree = "<group>"; };
+		735B14A217FE8A3D00DC611E /* BaseMapPopoverViewConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseMapPopoverViewConstants.h; path = UI/GoogleMapsInfoWindow/BaseMapPopoverViewConstants.h; sourceTree = "<group>"; };
+		735B14A317FE8A3D00DC611E /* DPGoogleMapsInfoWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPGoogleMapsInfoWindow.h; path = UI/GoogleMapsInfoWindow/DPGoogleMapsInfoWindow.h; sourceTree = "<group>"; };
+		735B14A417FE8A3D00DC611E /* DPGoogleMapsInfoWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPGoogleMapsInfoWindow.m; path = UI/GoogleMapsInfoWindow/DPGoogleMapsInfoWindow.m; sourceTree = "<group>"; };
+		735B14A517FE8A3D00DC611E /* DPGoogleMapsInfoWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DPGoogleMapsInfoWindow.xib; path = UI/GoogleMapsInfoWindow/DPGoogleMapsInfoWindow.xib; sourceTree = "<group>"; };
+		735B14AB17FE8B5700DC611E /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Utils.h"; path = "Utils/UIView+Utils.h"; sourceTree = "<group>"; };
+		735B14AC17FE8B5700DC611E /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Utils.m"; path = "Utils/UIView+Utils.m"; sourceTree = "<group>"; };
+		735B14AE17FE9AFC00DC611E /* navigationBarBackgroundRetro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationBarBackgroundRetro.png; sourceTree = "<group>"; };
+		735B14AF17FE9AFC00DC611E /* navigationBarBackgroundRetro@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationBarBackgroundRetro@2x.png"; sourceTree = "<group>"; };
 		AC38900F59F24241ACD5C214 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B6723517FE8AE800A41077 /* GTLBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLBase64.h; sourceTree = "<group>"; };
 		C9B6723617FE8AE800A41077 /* GTLBatchQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLBatchQuery.h; sourceTree = "<group>"; };
@@ -356,16 +374,18 @@
 			children = (
 				735B148D17FE5FDB00DC611E /* Assets */,
 				735B148917FE5DC600DC611E /* Catagories */,
-				158E2ADD17FE494E00CD8F9F /* Models */,
-				158E2AD917FE475300CD8F9F /* External Libraries */,
 				735B148017FE30C900DC611E /* Commons */,
 				735B143C17FE2C9B00DC611E /* DPAppDelegate.h */,
 				735B143D17FE2C9B00DC611E /* DPAppDelegate.m */,
-				735B143F17FE2C9B00DC611E /* Main.storyboard */,
 				735B144217FE2C9B00DC611E /* DPMapViewController.h */,
 				735B144317FE2C9B00DC611E /* DPMapViewController.m */,
+				158E2AD917FE475300CD8F9F /* External Libraries */,
 				735B144517FE2C9B00DC611E /* Images.xcassets */,
+				735B143F17FE2C9B00DC611E /* Main.storyboard */,
+				158E2ADD17FE494E00CD8F9F /* Models */,
 				735B143417FE2C9B00DC611E /* Supporting Files */,
+				735B149317FE80CC00DC611E /* UI */,
+				735B14AA17FE8B4900DC611E /* Utils */,
 			);
 			path = DivvyPredictor;
 			sourceTree = "<group>";
@@ -419,6 +439,8 @@
 		735B148D17FE5FDB00DC611E /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				735B14AE17FE9AFC00DC611E /* navigationBarBackgroundRetro.png */,
+				735B14AF17FE9AFC00DC611E /* navigationBarBackgroundRetro@2x.png */,
 				735B148E17FE611500DC611E /* ios7_atm_orange_pin.png */,
 				735B148F17FE611500DC611E /* ios7_atm_orange_pin@2x.png */,
 			);
@@ -500,6 +522,37 @@
 				C9B672C117FEE0FC00A41077 /* DevelopmentTestTool */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		735B149317FE80CC00DC611E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				735B149E17FE89A800DC611E /* GoogleMapsInfoWindow */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		735B149E17FE89A800DC611E /* GoogleMapsInfoWindow */ = {
+			isa = PBXGroup;
+			children = (
+				735B149F17FE8A3D00DC611E /* BaseMapPopoverView.h */,
+				735B14A017FE8A3D00DC611E /* BaseMapPopoverView.m */,
+				735B14A117FE8A3D00DC611E /* BaseMapPopoverView.xib */,
+				735B14A217FE8A3D00DC611E /* BaseMapPopoverViewConstants.h */,
+				735B14A317FE8A3D00DC611E /* DPGoogleMapsInfoWindow.h */,
+				735B14A417FE8A3D00DC611E /* DPGoogleMapsInfoWindow.m */,
+				735B14A517FE8A3D00DC611E /* DPGoogleMapsInfoWindow.xib */,
+			);
+			name = GoogleMapsInfoWindow;
+			sourceTree = "<group>";
+		};
+		735B14AA17FE8B4900DC611E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				735B14AB17FE8B5700DC611E /* UIView+Utils.h */,
+				735B14AC17FE8B5700DC611E /* UIView+Utils.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -658,10 +711,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				735B144617FE2C9B00DC611E /* Images.xcassets in Resources */,
+				735B14A917FE8A3D00DC611E /* DPGoogleMapsInfoWindow.xib in Resources */,
 				735B149117FE611500DC611E /* ios7_atm_orange_pin@2x.png in Resources */,
+				735B14A717FE8A3D00DC611E /* BaseMapPopoverView.xib in Resources */,
 				735B143817FE2C9B00DC611E /* InfoPlist.strings in Resources */,
 				735B144117FE2C9B00DC611E /* Main.storyboard in Resources */,
 				735B146717FE2FB500DC611E /* GoogleMaps.bundle in Resources */,
+				735B14B117FE9AFC00DC611E /* navigationBarBackgroundRetro@2x.png in Resources */,
+				735B14B017FE9AFC00DC611E /* navigationBarBackgroundRetro.png in Resources */,
 				735B149017FE611500DC611E /* ios7_atm_orange_pin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -721,12 +778,15 @@
 				C9B6726817FE8BD600A41077 /* GTLPredictionInsert2.m in Sources */,
 				158E2AE317FE499900CD8F9F /* DPBikeStationsList.m in Sources */,
 				735B144417FE2C9B00DC611E /* DPMapViewController.m in Sources */,
+				735B14A817FE8A3D00DC611E /* DPGoogleMapsInfoWindow.m in Sources */,
 				735B143A17FE2C9B00DC611E /* main.m in Sources */,
 				C9B6726617FE8BD600A41077 /* GTLPredictionAnalyze.m in Sources */,
 				C9B6726C17FE8BD600A41077 /* GTLServicePrediction.m in Sources */,
 				C9B6726A17FE8BD600A41077 /* GTLPredictionOutput.m in Sources */,
 				C9B6726B17FE8BD600A41077 /* GTLQueryPrediction.m in Sources */,
 				158E2ADC17FE479700CD8F9F /* MBProgressHUD.m in Sources */,
+				735B14A617FE8A3D00DC611E /* BaseMapPopoverView.m in Sources */,
+				735B14AD17FE8B5700DC611E /* UIView+Utils.m in Sources */,
 				158E2AE017FE497900CD8F9F /* DPBikeStation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

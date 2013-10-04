@@ -8,6 +8,7 @@
 
 #import "DPMapViewController.h"
 #import "GMSMarkerOptions+MarkerType.h"
+#import "DPGoogleMapsInfoWindow.h"
 #import "DPBikeStation.h"
 #import "DPBikeStationsList.h"
 
@@ -103,6 +104,7 @@
 - (void)moveCameraPositionToLatitude:(CLLocationDegrees)latitude toLongitude:(CLLocationDegrees)longitude withZoomLevel:(int)zoomLevel{
     GMSCameraPosition *cameraPosition = [GMSCameraPosition cameraWithTarget:CLLocationCoordinate2DMake(latitude, longitude) zoom:zoomLevel];
     [self.googleMapView animateToCameraPosition:cameraPosition];
+    [self addPinToMap:self.googleMapView ofType:OrangePin atLocation:CLLocationCoordinate2DMake(latitude, longitude) withUserData:nil];
 }
 
 - (void)loadLocationsBasedOnCurrentLocation {
@@ -118,5 +120,17 @@
     marker.userData = data;
     marker.map = mapView;
     marker.appearAnimation = kGMSMarkerAnimationPop;
+}
+
+#pragma mark - GoogleMapDelegate Methods
+- (UIView *)mapView:(GMSMapView *)mapView markerInfoWindow:(GMSMarker *)marker {
+    /* Get marker.userData */
+//    NSObject *response = (NSObject *)marker.userData;
+    DPGoogleMapsInfoWindow *infoWindow = [[DPGoogleMapsInfoWindow alloc] init];
+    infoWindow.addressLabel.text = @"42nd Clark St";
+    infoWindow.numberOfBikesAvailable.text = @"12";
+    infoWindow.numberOfDocksAvailable.text = @"13";
+    infoWindow.disctanceToStation.text = @"2.3";
+    return infoWindow;
 }
 @end

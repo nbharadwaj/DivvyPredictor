@@ -22,6 +22,7 @@
 //        NSLog(@"Obj: %@ -- error : %@",object,[error localizedDescription]);
 //    }];
    // NSLog(@"%@",[GTLQueryPrediction queryForTrainedmodelsGetWithProject:@"221220586705" identifier:@"divvystation66"]);
+//    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navigationBarBackgroundRetro"] forBarMetrics:UIBarMetricsDefault];
     return YES;
 }
 							
