@@ -16,13 +16,6 @@
 {
     // Override point for customization after application launch.
     [GMSServices provideAPIKey:kGoogleAPIKey];
-//    GTLQuery *query = [GTLQueryPrediction queryForTrainedmodelsGetWithProject:@"221220586705" identifier:@"divvystation66"];
-//    GTLService *service = [[GTLService alloc]init];
-//    [service executeQuery:query completionHandler:^(GTLServiceTicket *ticket, id object, NSError *error) {
-//        NSLog(@"Obj: %@ -- error : %@",object,[error localizedDescription]);
-//    }];
-   // NSLog(@"%@",[GTLQueryPrediction queryForTrainedmodelsGetWithProject:@"221220586705" identifier:@"divvystation66"]);
-//    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navigationBarBackgroundRetro"] forBarMetrics:UIBarMetricsDefault];
     return YES;
 }
 							
