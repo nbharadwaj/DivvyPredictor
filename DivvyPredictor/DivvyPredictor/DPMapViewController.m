@@ -24,7 +24,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *selectDestinationButton;
 @property (nonatomic, strong) NSArray *bikeStations;
 @property (strong, nonatomic) CLLocationManager *locationManager;
-
+@property (strong, nonatomic) IBOutlet UIView *sliderView;
+@property (nonatomic, strong) NSString *timeToAdd;
 @end
 
 @implementation DPMapViewController
@@ -36,6 +37,7 @@
     [self.view bringSubviewToFront:self.selectDestinationButton];
     self.googleMapView.delegate = self;
     self.googleMapView.myLocationEnabled = YES;
+    _timeToAdd = @"0";
     
     if([CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorized){
         [self loadLocationsBasedOnCurrentLocation];
@@ -43,6 +45,7 @@
         self.locationManager = [[CLLocationManager alloc] init];
         self.locationManager.delegate = self;
     }
+    [self setupSlider];
 }
 
 - (void) viewWillAppear:(BOOL)animated {
@@ -56,7 +59,18 @@
             for (DPBikeStation *bikeStation in self.bikeStations) {
                 if (bikeStation.distanceToBikeStationFromCurrentLocation < 1.0 && bikeStation.distanceToBikeStationFromCurrentLocation != 0.00 && count < 5) {
                     CLLocationCoordinate2D location =  CLLocationCoordinate2DMake(bikeStation.latitude, bikeStation.longitude);
-                    [self addPinToMap:self.googleMapView ofType:OrangePin atLocation:location withUserData:bikeStation];
+                    PinType type;
+                
+                float probability = [bikeStation.availableBikes floatValue] / ([bikeStation.availableBikes floatValue] + [bikeStation.availableDocks floatValue]);
+                
+                if (probability >= .5)
+                    type = GreenBike;
+                else if ([bikeStation.availableBikes intValue] <= .1)
+                    type = RedBike;
+                else
+                    type = YellowBike;
+                
+                [self addPinToMap:self.googleMapView ofType:type atLocation:location withUserData:bikeStation];
                     count++;
                 }
             }
@@ -135,6 +149,7 @@
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
     [self.googleMapView removeObserver:self forKeyPath:@"myLocation"];
     [self moveCameraPositionToLatitude:self.googleMapView.myLocation.coordinate.latitude toLongitude:self.googleMapView.myLocation.coordinate.longitude withZoomLevel:kDefaultZoomLevel];
+//    [self.navigationController pushViewController:[self.navigationController.storyboard instantiateViewControllerWithIdentifier:@"IDENTIFIER"] animated:YES];
 }
 
 #pragma mark - Helper Methods
@@ -153,7 +168,10 @@
 - (void)addPinToMap:(GMSMapView *)mapView ofType:(PinType)type atLocation:(CLLocationCoordinate2D)location withUserData:(id)data {
     GMSMarker *marker = [[GMSMarker alloc] init];
     marker.position = location;
-    marker.icon = [GMSMarker formatPinTypeToImage:type];
+    if (data != nil)
+        marker.icon = [GMSMarker formatPinTypeToImage:type];
+    else
+        marker.icon = [GMSMarker formatPinTypeToImage:type];
     marker.userData = data;
     marker.map = mapView;
     marker.appearAnimation = kGMSMarkerAnimationPop;
@@ -169,6 +187,35 @@
     infoWindow.numberOfDocksAvailable.text = bikeStation.availableDocks;
     infoWindow.disctanceToStation.text = [NSString stringWithFormat:@"%.2f", bikeStation.distanceToBikeStationFromCurrentLocation];
     return infoWindow;
+}
+
+#pragma mark - Slider Methods
+- (void)setupSlider
+{
+    self.sliderView.alpha = .8;
+    slider = [[TDRatingView alloc]init];
+    slider.maximumRating = 30;
+    slider.minimumRating = 0;
+    slider.widthOfEachNo = 40;
+    slider.heightOfEachNo = 30;
+    slider.sliderHeight = 10;
+    slider.difference = 5;
+    slider.delegate = self;
+    slider.scaleBgColor = [UIColor colorWithRed:40.0f/255 green:38.0f/255 blue:46.0f/255 alpha:1.0];
+    slider.arrowColor = [UIColor colorWithRed:0.0f/255 green:215.0f/255 blue:255.0f/255 alpha:1.0];
+    slider.disableStateTextColor = [UIColor colorWithRed:202.0f/255 green:183.0f/255 blue:172.0f/255 alpha:1.0];
+    [slider drawRatingControlWithX:20 Y:20];
+    [self.sliderView addSubview:slider];
+}
+
+#pragma mark - TDRatingScaleDelegate Methods
+- (void) selectedRating:(NSString *)scale;
+{
+    _timeToAdd = scale;
+    NSDate *futureTime = [[NSDate date] dateByAddingTimeInterval:([scale intValue]*60)];
+    NSLog(@"TimeToAdd:::%@",_timeToAdd);
+    NSLog(@"FutureTime:::%@",futureTime);
+    NSLog(@"SelectedRating:::%@",scale);
 }
 
 //Creat your Google APP here: https://code.google.com/apis/console/ and get the key and secret
