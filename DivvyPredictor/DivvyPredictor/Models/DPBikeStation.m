@@ -10,4 +10,15 @@
 
 @implementation DPBikeStation
 
+- (void)setLatitudeString:(NSString *)latitudeString {
+    _latitudeString = latitudeString;
+    self.latitude = [latitudeString doubleValue];
+}
+
+- (void)setLongitudeString:(NSString *)longitudeString {
+    _longitudeString = longitudeString;
+    self.longitude = [longitudeString doubleValue];
+}
+
+
 @end

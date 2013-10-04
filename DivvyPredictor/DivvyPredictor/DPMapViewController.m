@@ -11,12 +11,13 @@
 #import "DPGoogleMapsInfoWindow.h"
 #import "DPBikeStation.h"
 #import "DPBikeStationsList.h"
+#import "DPBikeStationSingleton.h"
 
 @interface DPMapViewController ()
 
 @property (weak, nonatomic) IBOutlet GMSMapView *googleMapView;
 @property (weak, nonatomic) IBOutlet UIButton *selectDestinationButton;
-
+@property (nonatomic, strong) NSArray *bikeStations;
 @property (strong, nonatomic) CLLocationManager *locationManager;
 
 @end
@@ -36,11 +37,26 @@
         self.locationManager = [[CLLocationManager alloc] init];
         self.locationManager.delegate = self;
     }
-    
-    [self loadStations];
 }
 
-- (void)loadStations
+- (void) viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self loadStationsWithCompletionHandler:^{
+        DPBikeStationSingleton *singleton = [DPBikeStationSingleton sharedManager];
+        self.bikeStations = [singleton.divvyDataSource objectForKey:kBikeStations];
+        [self moveCameraPositionToLatitude:[(DPBikeStation *)[self.bikeStations objectAtIndex:0] latitude] toLongitude:[(DPBikeStation *)[self.bikeStations objectAtIndex:0] longitude] withZoomLevel:kDefaultZoomLevel];
+        if([self.bikeStations count] > 0) {
+            for (DPBikeStation *bikeStation in self.bikeStations) {
+                CLLocationCoordinate2D location =  CLLocationCoordinate2DMake(bikeStation.latitude, bikeStation.longitude);
+                [self addPinToMap:self.googleMapView ofType:OrangePin atLocation:location withUserData:bikeStation];
+            }
+        }
+    }];
+
+    
+}
+
+- (void)loadStationsWithCompletionHandler:(void(^)())completionBlock
 {
     RKObjectMapping *stationListMapping = [RKObjectMapping mappingForClass:[DPBikeStationsList class]];
     [stationListMapping addAttributeMappingsFromArray:@[@"executionTime"]];
@@ -78,15 +94,18 @@
     RKObjectRequestOperation *objectRequestOperation = [[RKObjectRequestOperation alloc] initWithRequest:request responseDescriptors:@[ responseDescriptor ]];
 
     [objectRequestOperation setCompletionBlockWithSuccess:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+        DPBikeStationSingleton *singleton = [DPBikeStationSingleton sharedManager];
+        [singleton.divvyDataSource setObject:[(DPBikeStationsList *)[mappingResult.array firstObject] bikeStations] forKey:kBikeStations];
+        completionBlock();
         RKLogInfo(@"Load collection of stations: %@", mappingResult.array);
-//        DPBikeStationsList *stationList = [mappingResult.array firstObject];
-//        DPBikeStation *station = [stationList.bikeStations firstObject];
     } failure:^(RKObjectRequestOperation *operation, NSError *error) {
         RKLogError(@"Operation failed with error: %@", error);
     }];
     
     [objectRequestOperation start];
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -125,12 +144,12 @@
 #pragma mark - GoogleMapDelegate Methods
 - (UIView *)mapView:(GMSMapView *)mapView markerInfoWindow:(GMSMarker *)marker {
     /* Get marker.userData */
-//    NSObject *response = (NSObject *)marker.userData;
+    DPBikeStation *bikeStation = (DPBikeStation *)marker.userData;
     DPGoogleMapsInfoWindow *infoWindow = [[DPGoogleMapsInfoWindow alloc] init];
-    infoWindow.addressLabel.text = @"42nd Clark St";
-    infoWindow.numberOfBikesAvailable.text = @"12";
-    infoWindow.numberOfDocksAvailable.text = @"13";
-    infoWindow.disctanceToStation.text = @"2.3";
+    infoWindow.addressLabel.text = bikeStation.stationName;
+    infoWindow.numberOfBikesAvailable.text = bikeStation.availableBikes;
+    infoWindow.numberOfDocksAvailable.text = bikeStation.availableDocks;
+    infoWindow.disctanceToStation.text = @"2.45";
     return infoWindow;
 }
 @end
