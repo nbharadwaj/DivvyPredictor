@@ -24,6 +24,15 @@
         case DirectionsEndPin:
             imageName = @"mapview_green_b_pin";
             break;
+        case GreenBike:
+            imageName = @"Green Bike Pin";
+            break;
+        case YellowBike:
+            imageName = @"Yellow Bike Pin";
+            break;
+        case RedBike:
+            imageName = @"Red Bike Pin";
+            break;
     }
     return [UIImage imageNamed:imageName];
 }

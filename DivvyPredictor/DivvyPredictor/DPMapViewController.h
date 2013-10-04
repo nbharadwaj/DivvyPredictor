@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TDRatingView.h"
 
-@interface DPMapViewController : UIViewController <GMSMapViewDelegate, CLLocationManagerDelegate>
-
+@interface DPMapViewController : UIViewController <GMSMapViewDelegate, CLLocationManagerDelegate, TDRatingViewDelegate> {
+    TDRatingView *slider;
+}
 @end

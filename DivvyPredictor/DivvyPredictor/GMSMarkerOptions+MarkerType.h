@@ -13,6 +13,9 @@ typedef enum {
     BluePin,
     DirectionsStartPin,
     DirectionsEndPin,
+    GreenBike,
+    YellowBike,
+    RedBike
 }PinType;
 
 @interface GMSMarker (MarkerType)
