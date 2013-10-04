@@ -45,7 +45,6 @@
 		735B149017FE611500DC611E /* ios7_atm_orange_pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 735B148E17FE611500DC611E /* ios7_atm_orange_pin.png */; };
 		735B149117FE611500DC611E /* ios7_atm_orange_pin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 735B148F17FE611500DC611E /* ios7_atm_orange_pin@2x.png */; };
 		83EFAA7C0BC949C99E73A4F0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC38900F59F24241ACD5C214 /* libPods.a */; };
-		C9B6723317FE8AC600A41077 /* libGTLTouchStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B6722C17FE8AB000A41077 /* libGTLTouchStaticLib.a */; };
 		C9B6726617FE8BD600A41077 /* GTLPredictionAnalyze.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B6725817FE8BD600A41077 /* GTLPredictionAnalyze.m */; };
 		C9B6726717FE8BD600A41077 /* GTLPredictionConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B6725A17FE8BD600A41077 /* GTLPredictionConstants.m */; };
 		C9B6726817FE8BD600A41077 /* GTLPredictionInsert2.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B6725C17FE8BD600A41077 /* GTLPredictionInsert2.m */; };
@@ -53,6 +52,7 @@
 		C9B6726A17FE8BD600A41077 /* GTLPredictionOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B6726017FE8BD600A41077 /* GTLPredictionOutput.m */; };
 		C9B6726B17FE8BD600A41077 /* GTLQueryPrediction.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B6726217FE8BD600A41077 /* GTLQueryPrediction.m */; };
 		C9B6726C17FE8BD600A41077 /* GTLServicePrediction.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B6726417FE8BD600A41077 /* GTLServicePrediction.m */; };
+		C9B6728F17FE941700A41077 /* libGTLTouchStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B6728E17FE941700A41077 /* libGTLTouchStaticLib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,41 +97,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 735B142917FE2C9B00DC611E;
 			remoteInfo = DivvyPredictor;
-		};
-		C9B6722917FE8AB000A41077 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C9B6722217FE8AB000A41077 /* GTL.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4F38F6A60B66E91D00B24B81;
-			remoteInfo = GTLFramework;
-		};
-		C9B6722B17FE8AB000A41077 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C9B6722217FE8AB000A41077 /* GTL.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4F12027C11A4CA2F00BEB470;
-			remoteInfo = GTLTouchStaticLib;
-		};
-		C9B6722D17FE8AB000A41077 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C9B6722217FE8AB000A41077 /* GTL.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4F12027D11A4CA2F00BEB470;
-			remoteInfo = GTLUnitTests;
-		};
-		C9B6722F17FE8AB000A41077 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C9B6722217FE8AB000A41077 /* GTL.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4F1AD9020B71603F00DC0485;
-			remoteInfo = DevelopmentTestTool;
-		};
-		C9B6723117FE8ABC00A41077 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C9B6722217FE8AB000A41077 /* GTL.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 4F1C6E0E1027B3CE00B46459;
-			remoteInfo = GTLTouchStaticLib;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -186,7 +151,6 @@
 		735B148E17FE611500DC611E /* ios7_atm_orange_pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ios7_atm_orange_pin.png; path = Assets/ios7_atm_orange_pin.png; sourceTree = "<group>"; };
 		735B148F17FE611500DC611E /* ios7_atm_orange_pin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ios7_atm_orange_pin@2x.png"; path = "Assets/ios7_atm_orange_pin@2x.png"; sourceTree = "<group>"; };
 		AC38900F59F24241ACD5C214 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9B6722217FE8AB000A41077 /* GTL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GTL.xcodeproj; path = "../../../google-api-objectivec-client-read-only/Source/GTL.xcodeproj"; sourceTree = "<group>"; };
 		C9B6723517FE8AE800A41077 /* GTLBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLBase64.h; sourceTree = "<group>"; };
 		C9B6723617FE8AE800A41077 /* GTLBatchQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLBatchQuery.h; sourceTree = "<group>"; };
 		C9B6723717FE8AE800A41077 /* GTLBatchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLBatchResult.h; sourceTree = "<group>"; };
@@ -229,6 +193,8 @@
 		C9B6726217FE8BD600A41077 /* GTLQueryPrediction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLQueryPrediction.m; sourceTree = "<group>"; };
 		C9B6726317FE8BD600A41077 /* GTLServicePrediction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLServicePrediction.h; sourceTree = "<group>"; };
 		C9B6726417FE8BD600A41077 /* GTLServicePrediction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLServicePrediction.m; sourceTree = "<group>"; };
+		C9B6727F17FE93A200A41077 /* GTL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GTL.xcodeproj; path = "../../../google-api-objectivec-client-read-only/Source/GTL.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		C9B6728E17FE941700A41077 /* libGTLTouchStaticLib.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libGTLTouchStaticLib.a; path = "../../../google-api-objectivec-client-read-only/Source/build/Debug-iphoneos/libGTLTouchStaticLib.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,7 +202,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9B6723317FE8AC600A41077 /* libGTLTouchStaticLib.a in Frameworks */,
+				C9B6728F17FE941700A41077 /* libGTLTouchStaticLib.a in Frameworks */,
 				155D428D17FE6CB9004AC59A /* CFNetwork.framework in Frameworks */,
 				155D428B17FE6CA9004AC59A /* Security.framework in Frameworks */,
 				155D428917FE6C69004AC59A /* MobileCoreServices.framework in Frameworks */,
@@ -330,6 +296,7 @@
 		735B142C17FE2C9B00DC611E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C9B6728E17FE941700A41077 /* libGTLTouchStaticLib.a */,
 				155D428C17FE6CB9004AC59A /* CFNetwork.framework */,
 				155D428A17FE6CA9004AC59A /* Security.framework */,
 				155D428817FE6C69004AC59A /* MobileCoreServices.framework */,
@@ -430,17 +397,6 @@
 			name = Assets;
 			sourceTree = "<group>";
 		};
-		C9B6722317FE8AB000A41077 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C9B6722A17FE8AB000A41077 /* GTL.framework */,
-				C9B6722C17FE8AB000A41077 /* libGTLTouchStaticLib.a */,
-				C9B6722E17FE8AB000A41077 /* GTLUnitTests.octest */,
-				C9B6723017FE8AB000A41077 /* DevelopmentTestTool */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		C9B6723417FE8AE700A41077 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
@@ -500,9 +456,9 @@
 		C9B6726F17FE91A400A41077 /* PredictionAPI */ = {
 			isa = PBXGroup;
 			children = (
+				C9B6727F17FE93A200A41077 /* GTL.xcodeproj */,
 				C9B6725417FE8BD600A41077 /* Generated */,
 				C9B6723417FE8AE700A41077 /* Headers */,
-				C9B6722217FE8AB000A41077 /* GTL.xcodeproj */,
 			);
 			name = PredictionAPI;
 			sourceTree = "<group>";
@@ -523,7 +479,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				C9B6723217FE8ABC00A41077 /* PBXTargetDependency */,
 			);
 			name = DivvyPredictor;
 			productName = DivvyPredictor;
@@ -576,10 +531,6 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = C9B6722317FE8AB000A41077 /* Products */;
-					ProjectRef = C9B6722217FE8AB000A41077 /* GTL.xcodeproj */;
-				},
-				{
 					ProductGroup = 15BB436A17FE748D00985A92 /* Products */;
 					ProjectRef = 15BB436917FE748D00985A92 /* Pods.xcodeproj */;
 				},
@@ -626,34 +577,6 @@
 			fileType = archive.ar;
 			path = "libPods-TransitionKit.a";
 			remoteRef = 15BB437917FE748E00985A92 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C9B6722A17FE8AB000A41077 /* GTL.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GTL.framework;
-			remoteRef = C9B6722917FE8AB000A41077 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C9B6722C17FE8AB000A41077 /* libGTLTouchStaticLib.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libGTLTouchStaticLib.a;
-			remoteRef = C9B6722B17FE8AB000A41077 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C9B6722E17FE8AB000A41077 /* GTLUnitTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = GTLUnitTests.octest;
-			remoteRef = C9B6722D17FE8AB000A41077 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C9B6723017FE8AB000A41077 /* DevelopmentTestTool */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = DevelopmentTestTool;
-			remoteRef = C9B6722F17FE8AB000A41077 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -752,11 +675,6 @@
 			isa = PBXTargetDependency;
 			target = 735B142917FE2C9B00DC611E /* DivvyPredictor */;
 			targetProxy = 735B145017FE2C9B00DC611E /* PBXContainerItemProxy */;
-		};
-		C9B6723217FE8ABC00A41077 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GTLTouchStaticLib;
-			targetProxy = C9B6723117FE8ABC00A41077 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
