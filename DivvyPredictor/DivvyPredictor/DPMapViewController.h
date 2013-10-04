@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DPViewController : UIViewController
+@interface DPMapViewController : UIViewController
 
 @end

@@ -6,18 +6,19 @@
 //  Copyright (c) 2013 SolsticeExpress. All rights reserved.
 //
 
-#import "DPViewController.h"
+#import "DPMapViewController.h"
 
-@interface DPViewController ()
+@interface DPMapViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *selectDestinationButton;
 @end
 
-@implementation DPViewController
+@implementation DPMapViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [self.view bringSubviewToFront:self.selectDestinationButton];
 }
 
 - (void)didReceiveMemoryWarning
