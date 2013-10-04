@@ -38,6 +38,9 @@
 		735B147B17FE302F00DC611E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735B147A17FE302F00DC611E /* OpenGLES.framework */; };
 		735B147D17FE303700DC611E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735B147C17FE303700DC611E /* QuartzCore.framework */; };
 		735B147F17FE303F00DC611E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735B147E17FE303F00DC611E /* SystemConfiguration.framework */; };
+		735B148C17FE5DDA00DC611E /* GMSMarkerOptions+MarkerType.m in Sources */ = {isa = PBXBuildFile; fileRef = 735B148B17FE5DDA00DC611E /* GMSMarkerOptions+MarkerType.m */; };
+		735B149017FE611500DC611E /* ios7_atm_orange_pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 735B148E17FE611500DC611E /* ios7_atm_orange_pin.png */; };
+		735B149117FE611500DC611E /* ios7_atm_orange_pin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 735B148F17FE611500DC611E /* ios7_atm_orange_pin@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +94,10 @@
 		735B147C17FE303700DC611E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		735B147E17FE303F00DC611E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		735B148217FE316500DC611E /* CommonsConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommonsConstants.h; path = Commons/CommonsConstants.h; sourceTree = "<group>"; };
+		735B148A17FE5DDA00DC611E /* GMSMarkerOptions+MarkerType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GMSMarkerOptions+MarkerType.h"; sourceTree = "<group>"; };
+		735B148B17FE5DDA00DC611E /* GMSMarkerOptions+MarkerType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GMSMarkerOptions+MarkerType.m"; sourceTree = "<group>"; };
+		735B148E17FE611500DC611E /* ios7_atm_orange_pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ios7_atm_orange_pin.png; path = Assets/ios7_atm_orange_pin.png; sourceTree = "<group>"; };
+		735B148F17FE611500DC611E /* ios7_atm_orange_pin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ios7_atm_orange_pin@2x.png"; path = "Assets/ios7_atm_orange_pin@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +204,8 @@
 		735B143317FE2C9B00DC611E /* DivvyPredictor */ = {
 			isa = PBXGroup;
 			children = (
+				735B148D17FE5FDB00DC611E /* Assets */,
+				735B148917FE5DC600DC611E /* Catagories */,
 				158E2ADD17FE494E00CD8F9F /* Models */,
 				158E2AD917FE475300CD8F9F /* External Libraries */,
 				735B148017FE30C900DC611E /* Commons */,
@@ -246,6 +255,24 @@
 				735B148217FE316500DC611E /* CommonsConstants.h */,
 			);
 			name = Commons;
+			sourceTree = "<group>";
+		};
+		735B148917FE5DC600DC611E /* Catagories */ = {
+			isa = PBXGroup;
+			children = (
+				735B148A17FE5DDA00DC611E /* GMSMarkerOptions+MarkerType.h */,
+				735B148B17FE5DDA00DC611E /* GMSMarkerOptions+MarkerType.m */,
+			);
+			name = Catagories;
+			sourceTree = "<group>";
+		};
+		735B148D17FE5FDB00DC611E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				735B148E17FE611500DC611E /* ios7_atm_orange_pin.png */,
+				735B148F17FE611500DC611E /* ios7_atm_orange_pin@2x.png */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,9 +353,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				735B144617FE2C9B00DC611E /* Images.xcassets in Resources */,
+				735B149117FE611500DC611E /* ios7_atm_orange_pin@2x.png in Resources */,
 				735B143817FE2C9B00DC611E /* InfoPlist.strings in Resources */,
 				735B144117FE2C9B00DC611E /* Main.storyboard in Resources */,
 				735B146717FE2FB500DC611E /* GoogleMaps.bundle in Resources */,
+				735B149017FE611500DC611E /* ios7_atm_orange_pin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				735B143E17FE2C9B00DC611E /* DPAppDelegate.m in Sources */,
+				735B148C17FE5DDA00DC611E /* GMSMarkerOptions+MarkerType.m in Sources */,
 				158E2AE317FE499900CD8F9F /* DPBikeStationsList.m in Sources */,
 				735B144417FE2C9B00DC611E /* DPMapViewController.m in Sources */,
 				735B143A17FE2C9B00DC611E /* main.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "DPMapViewController.h"
+#import "GMSMarkerOptions+MarkerType.h"
 
 @interface DPMapViewController ()
 
@@ -57,4 +58,13 @@
     [self.googleMapView addObserver:self forKeyPath:@"myLocation" options:NSKeyValueObservingOptionNew context:nil];
 }
 
+/* Added pin to GoogleView at location */
+- (void)addPinToMap:(GMSMapView *)mapView ofType:(PinType)type atLocation:(CLLocationCoordinate2D)location withUserData:(id)data {
+    GMSMarker *marker = [[GMSMarker alloc] init];
+    marker.position = location;
+    marker.icon = [GMSMarker formatPinTypeToImage:type];
+    marker.userData = data;
+    marker.map = mapView;
+    marker.appearAnimation = kGMSMarkerAnimationPop;
+}
 @end
