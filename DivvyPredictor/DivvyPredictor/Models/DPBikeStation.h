@@ -11,21 +11,21 @@
 @interface DPBikeStation : NSObject
 
 @property (nonatomic) NSInteger stationId;
-@property (strong, nonatomic) NSString *stationName;
-@property (nonatomic) NSInteger availableDocks;
-@property (nonatomic) NSInteger totalDocks;
-@property (nonatomic) float latitude;
-@property (nonatomic) float longitude;
-@property (strong, nonatomic) NSString *statusValue;
-@property (nonatomic) NSInteger statusKey;
-@property (nonatomic) NSInteger availableBikes;
-@property (strong, nonatomic) NSString *address1;
-@property (strong, nonatomic) NSString *address2;
-@property (strong, nonatomic) NSString *city;
-@property (strong, nonatomic) NSString *postalCode;
-@property (strong, nonatomic) NSString *location;
-@property (strong, nonatomic) NSString *altitude;
-@property (nonatomic) BOOL testStation;
-@property (strong, nonatomic) NSString *lastCommunicationTime;
-@property (strong, nonatomic) NSString *landmark;
+@property (nonatomic, copy) NSString *stationName;
+@property (nonatomic, copy) NSString *availableDocks;
+@property (nonatomic, copy) NSString *totalDocks;
+@property (nonatomic, copy) NSString *latitude;
+@property (nonatomic, copy) NSString *longitude;
+@property (nonatomic, copy) NSString *statusValue;
+@property (nonatomic, copy) NSString *statusKey;
+@property (nonatomic, copy) NSString *availableBikes;
+@property (nonatomic, copy) NSString *address1;
+@property (nonatomic, copy) NSString *address2;
+@property (nonatomic, copy) NSString *city;
+@property (nonatomic, copy) NSString *postalCode;
+@property (nonatomic, copy) NSString *location;
+@property (nonatomic, copy) NSString *altitude;
+@property (nonatomic, copy) NSString *testStation;
+@property (nonatomic, copy) NSString *lastCommunicationTime;
+@property (nonatomic, copy) NSString *landmark;
 @end
