@@ -11,4 +11,8 @@
 #endif
 
 #define kGoogleAPIKey @"AIzaSyDqrDSa1O7YWUloiuq5zSgRM9BbAhHntgc"
-#define kDefaultZoomLevel 13
+#define kDefaultZoomLevel 12
+
+
+
+#define kBikeStations @"kBikeStations"

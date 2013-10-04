@@ -19,3 +19,4 @@
 #import "MBProgressHUD.h"
 #import <GoogleMaps/GoogleMaps.h>
 #import <MobileCoreServices/MobileCoreServices.h>
+#import <RestKit/RestKit.h>
