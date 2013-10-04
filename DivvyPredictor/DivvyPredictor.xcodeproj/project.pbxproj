@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		158E2ADC17FE479700CD8F9F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 158E2ADB17FE479700CD8F9F /* MBProgressHUD.m */; };
+		158E2AE017FE497900CD8F9F /* DPBikeStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 158E2ADF17FE497900CD8F9F /* DPBikeStation.m */; };
+		158E2AE317FE499900CD8F9F /* DPBikeStationsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 158E2AE217FE499900CD8F9F /* DPBikeStationsList.m */; };
 		735B142E17FE2C9B00DC611E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735B142D17FE2C9B00DC611E /* Foundation.framework */; };
 		735B143017FE2C9B00DC611E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735B142F17FE2C9B00DC611E /* CoreGraphics.framework */; };
 		735B143217FE2C9B00DC611E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735B143117FE2C9B00DC611E /* UIKit.framework */; };
@@ -14,7 +17,7 @@
 		735B143A17FE2C9B00DC611E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 735B143917FE2C9B00DC611E /* main.m */; };
 		735B143E17FE2C9B00DC611E /* DPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 735B143D17FE2C9B00DC611E /* DPAppDelegate.m */; };
 		735B144117FE2C9B00DC611E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 735B143F17FE2C9B00DC611E /* Main.storyboard */; };
-		735B144417FE2C9B00DC611E /* DPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 735B144317FE2C9B00DC611E /* DPViewController.m */; };
+		735B144417FE2C9B00DC611E /* DPMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 735B144317FE2C9B00DC611E /* DPMapViewController.m */; };
 		735B144617FE2C9B00DC611E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 735B144517FE2C9B00DC611E /* Images.xcassets */; };
 		735B144D17FE2C9B00DC611E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735B144C17FE2C9B00DC611E /* XCTest.framework */; };
 		735B144E17FE2C9B00DC611E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735B142D17FE2C9B00DC611E /* Foundation.framework */; };
@@ -48,6 +51,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		158E2ADA17FE479700CD8F9F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		158E2ADB17FE479700CD8F9F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		158E2ADE17FE497900CD8F9F /* DPBikeStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPBikeStation.h; path = Models/DPBikeStation.h; sourceTree = "<group>"; };
+		158E2ADF17FE497900CD8F9F /* DPBikeStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPBikeStation.m; path = Models/DPBikeStation.m; sourceTree = "<group>"; };
+		158E2AE117FE499900CD8F9F /* DPBikeStationsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPBikeStationsList.h; path = Models/DPBikeStationsList.h; sourceTree = "<group>"; };
+		158E2AE217FE499900CD8F9F /* DPBikeStationsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPBikeStationsList.m; path = Models/DPBikeStationsList.m; sourceTree = "<group>"; };
 		735B142A17FE2C9B00DC611E /* DivvyPredictor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DivvyPredictor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		735B142D17FE2C9B00DC611E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		735B142F17FE2C9B00DC611E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,8 +68,8 @@
 		735B143C17FE2C9B00DC611E /* DPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPAppDelegate.h; sourceTree = "<group>"; };
 		735B143D17FE2C9B00DC611E /* DPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPAppDelegate.m; sourceTree = "<group>"; };
 		735B144017FE2C9B00DC611E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		735B144217FE2C9B00DC611E /* DPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPViewController.h; sourceTree = "<group>"; };
-		735B144317FE2C9B00DC611E /* DPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPViewController.m; sourceTree = "<group>"; };
+		735B144217FE2C9B00DC611E /* DPMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPMapViewController.h; sourceTree = "<group>"; };
+		735B144317FE2C9B00DC611E /* DPMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPMapViewController.m; sourceTree = "<group>"; };
 		735B144517FE2C9B00DC611E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		735B144B17FE2C9B00DC611E /* DivvyPredictorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DivvyPredictorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		735B144C17FE2C9B00DC611E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -121,6 +130,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		158E2AD917FE475300CD8F9F /* External Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				158E2ADA17FE479700CD8F9F /* MBProgressHUD.h */,
+				158E2ADB17FE479700CD8F9F /* MBProgressHUD.m */,
+			);
+			name = "External Libraries";
+			sourceTree = "<group>";
+		};
+		158E2ADD17FE494E00CD8F9F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				158E2ADE17FE497900CD8F9F /* DPBikeStation.h */,
+				158E2ADF17FE497900CD8F9F /* DPBikeStation.m */,
+				158E2AE117FE499900CD8F9F /* DPBikeStationsList.h */,
+				158E2AE217FE499900CD8F9F /* DPBikeStationsList.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		735B142117FE2C9B00DC611E = {
 			isa = PBXGroup;
 			children = (
@@ -168,12 +197,14 @@
 		735B143317FE2C9B00DC611E /* DivvyPredictor */ = {
 			isa = PBXGroup;
 			children = (
+				158E2ADD17FE494E00CD8F9F /* Models */,
+				158E2AD917FE475300CD8F9F /* External Libraries */,
 				735B148017FE30C900DC611E /* Commons */,
 				735B143C17FE2C9B00DC611E /* DPAppDelegate.h */,
 				735B143D17FE2C9B00DC611E /* DPAppDelegate.m */,
 				735B143F17FE2C9B00DC611E /* Main.storyboard */,
-				735B144217FE2C9B00DC611E /* DPViewController.h */,
-				735B144317FE2C9B00DC611E /* DPViewController.m */,
+				735B144217FE2C9B00DC611E /* DPMapViewController.h */,
+				735B144317FE2C9B00DC611E /* DPMapViewController.m */,
 				735B144517FE2C9B00DC611E /* Images.xcassets */,
 				735B143417FE2C9B00DC611E /* Supporting Files */,
 			);
@@ -317,8 +348,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				735B143E17FE2C9B00DC611E /* DPAppDelegate.m in Sources */,
-				735B144417FE2C9B00DC611E /* DPViewController.m in Sources */,
+				158E2AE317FE499900CD8F9F /* DPBikeStationsList.m in Sources */,
+				735B144417FE2C9B00DC611E /* DPMapViewController.m in Sources */,
 				735B143A17FE2C9B00DC611E /* main.m in Sources */,
+				158E2ADC17FE479700CD8F9F /* MBProgressHUD.m in Sources */,
+				158E2AE017FE497900CD8F9F /* DPBikeStation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,8 +7,6 @@
 //
 
 #import "DPAppDelegate.h"
-#import "Commons/CommonsConstants.h"
-#import <GoogleMaps/GoogleMaps.h>
 
 @implementation DPAppDelegate
 
