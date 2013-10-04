@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>73F3CD7D-1BAB-4514-859C-873E3196CC89</string>
+	<string>5834D528-08E2-402E-87B5-148C43D6C631</string>
 	<key>IDESourceControlProjectName</key>
 	<string>DivvyPredictor</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>52C28222-6EA2-4F1D-8D98-D7BB8CE50B9B</key>
-		<string>ssh://github.com/msanisetty/DivvyPredictor.git</string>
+		<key>0C0C16E2-D972-466F-9859-ED44CBED9F8F</key>
+		<string>ssh://github.com/nbharadwaj/DivvyPredictor.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>DivvyPredictor/DivvyPredictor.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>52C28222-6EA2-4F1D-8D98-D7BB8CE50B9B</key>
+		<key>0C0C16E2-D972-466F-9859-ED44CBED9F8F</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/msanisetty/DivvyPredictor.git</string>
+	<string>ssh://github.com/nbharadwaj/DivvyPredictor.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>52C28222-6EA2-4F1D-8D98-D7BB8CE50B9B</string>
+	<string>0C0C16E2-D972-466F-9859-ED44CBED9F8F</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>52C28222-6EA2-4F1D-8D98-D7BB8CE50B9B</string>
+			<string>0C0C16E2-D972-466F-9859-ED44CBED9F8F</string>
 			<key>IDESourceControlWCCName</key>
 			<string>DivvyPredictor</string>
 		</dict>

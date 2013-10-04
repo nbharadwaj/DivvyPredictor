@@ -9,5 +9,4 @@
 #import <UIKit/UIKit.h>
 
 @interface DPMapViewController : UIViewController <GMSMapViewDelegate, CLLocationManagerDelegate>
-
 @end
