@@ -11,7 +11,7 @@
 #endif
 
 #define kGoogleAPIKey @"AIzaSyDqrDSa1O7YWUloiuq5zSgRM9BbAhHntgc"
-#define kDefaultZoomLevel 12
+#define kDefaultZoomLevel 15
 
 
 

@@ -18,6 +18,7 @@
 
 
 @interface DPMapViewController () {
+    CLLocation *currentLocation;
 }
 
 @property (weak, nonatomic) IBOutlet GMSMapView *googleMapView;
@@ -50,38 +51,43 @@
 
 - (void) viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self loadStationsWithCompletionHandler:^{
-        DPBikeStationSingleton *singleton = [DPBikeStationSingleton sharedManager];
-        self.bikeStations = [singleton.divvyDataSource objectForKey:kBikeStations];
-        [self moveCameraPositionToLatitude:[(DPBikeStation *)[self.bikeStations objectAtIndex:0] latitude] toLongitude:[(DPBikeStation *)[self.bikeStations objectAtIndex:0] longitude] withZoomLevel:kDefaultZoomLevel];
-        if([self.bikeStations count] > 0) {
-            int count = 1;
-            for (DPBikeStation *bikeStation in self.bikeStations) {
-                if (bikeStation.distanceToBikeStationFromCurrentLocation < 1.0 && bikeStation.distanceToBikeStationFromCurrentLocation != 0.00 && count < 5) {
-                    CLLocationCoordinate2D location =  CLLocationCoordinate2DMake(bikeStation.latitude, bikeStation.longitude);
-                    PinType type;
-                
-                float probability = [bikeStation.availableBikes floatValue] / ([bikeStation.availableBikes floatValue] + [bikeStation.availableDocks floatValue]);
-                
-                if (probability >= .5)
-                    type = GreenBike;
-                else if ([bikeStation.availableBikes intValue] <= .1)
-                    type = RedBike;
-                else
-                    type = YellowBike;
-                
-                [self addPinToMap:self.googleMapView ofType:type atLocation:location withUserData:bikeStation];
-                    count++;
+    [self.googleMapView clear];
+    if (self.presentingViewController) {
+        [self addPinToMap:self.googleMapView ofType:OrangePin atLocation:CLLocationCoordinate2DMake(41.8858327415, -87.6413823149) withUserData:nil];
+        currentLocation = [[CLLocation alloc] initWithLatitude:41.8858327415 longitude:-87.6413823149];
+    }
+        [self loadStationsWithCompletionHandler:^{
+            DPBikeStationSingleton *singleton = [DPBikeStationSingleton sharedManager];
+            self.bikeStations = [singleton.divvyDataSource objectForKey:kBikeStations];
+            [self moveCameraPositionToLatitude:[(DPBikeStation *)[self.bikeStations objectAtIndex:0] latitude] toLongitude:[(DPBikeStation *)[self.bikeStations objectAtIndex:0] longitude] withZoomLevel:kDefaultZoomLevel];
+            if([self.bikeStations count] > 0) {
+                int count = 1;
+                for (DPBikeStation *bikeStation in self.bikeStations) {
+                    if (bikeStation.distanceToBikeStationFromCurrentLocation < 1.0 && bikeStation.distanceToBikeStationFromCurrentLocation != 0.00 && count < 5) {
+                        CLLocationCoordinate2D location =  CLLocationCoordinate2DMake(bikeStation.latitude, bikeStation.longitude);
+                        PinType type;
+                        
+                        float probability = [bikeStation.availableBikes floatValue] / ([bikeStation.availableBikes floatValue] + [bikeStation.availableDocks floatValue]);
+                        
+                        if (probability >= .5)
+                            type = GreenBike;
+                        else if ([bikeStation.availableBikes intValue] <= .1)
+                            type = RedBike;
+                        else
+                            type = YellowBike;
+                        
+                        [self addPinToMap:self.googleMapView ofType:type atLocation:location withUserData:bikeStation];
+                        count++;
+                    }
                 }
             }
-        }
-    }];
+        }];
 }
 
 - (float)calculateDistanceFromLocation:(CLLocationCoordinate2D)location
 {
     CLLocation *stationLocation = [[CLLocation alloc] initWithLatitude:location.latitude longitude:location.longitude];
-    CLLocationDistance distance = [stationLocation distanceFromLocation:self.googleMapView.myLocation];
+    CLLocationDistance distance = [stationLocation distanceFromLocation:currentLocation];
     return distance * 0.000621371;
 }
 
@@ -149,6 +155,7 @@
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
     [self.googleMapView removeObserver:self forKeyPath:@"myLocation"];
     [self moveCameraPositionToLatitude:self.googleMapView.myLocation.coordinate.latitude toLongitude:self.googleMapView.myLocation.coordinate.longitude withZoomLevel:kDefaultZoomLevel];
+    currentLocation = self.googleMapView.myLocation;
 //    [self.navigationController pushViewController:[self.navigationController.storyboard instantiateViewControllerWithIdentifier:@"IDENTIFIER"] animated:YES];
 }
 
@@ -188,6 +195,11 @@
     infoWindow.disctanceToStation.text = [NSString stringWithFormat:@"%.2f", bikeStation.distanceToBikeStationFromCurrentLocation];
     return infoWindow;
 }
+
+- (void)mapView:(GMSMapView *)mapView didTapInfoWindowOfMarker:(GMSMarker *)marker {
+    [self performSegueWithIdentifier:@"DestinationSegue" sender:marker.userData];
+}
+
 
 #pragma mark - Slider Methods
 - (void)setupSlider

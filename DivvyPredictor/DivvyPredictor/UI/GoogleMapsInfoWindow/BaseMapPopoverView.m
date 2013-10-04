@@ -19,10 +19,14 @@
 @property (nonatomic,weak) IBOutlet UIView *backgroundView;
 @property (nonatomic,weak) IBOutlet UIView *greyBorderView;
 @property (nonatomic,weak) IBOutlet UIView *arrowView;
+@property (weak, nonatomic) IBOutlet UIButton *nextButton;
 
 @end
 
 @implementation BaseMapPopoverView
+
+- (IBAction)nextButtonClick:(id)sender {
+}
 
 - (id)initWithContentView:(UIView *)contentView
 {

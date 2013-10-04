@@ -76,6 +76,7 @@
 		C9B6726A17FE8BD600A41077 /* GTLPredictionOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B6726017FE8BD600A41077 /* GTLPredictionOutput.m */; };
 		C9B6726B17FE8BD600A41077 /* GTLQueryPrediction.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B6726217FE8BD600A41077 /* GTLQueryPrediction.m */; };
 		C9B6726C17FE8BD600A41077 /* GTLServicePrediction.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B6726417FE8BD600A41077 /* GTLServicePrediction.m */; };
+		C9B672FF17FF38AA00A41077 /* DPDestinationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B672FE17FF38AA00A41077 /* DPDestinationTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -276,6 +277,8 @@
 		C9B6726217FE8BD600A41077 /* GTLQueryPrediction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLQueryPrediction.m; sourceTree = "<group>"; };
 		C9B6726317FE8BD600A41077 /* GTLServicePrediction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLServicePrediction.h; sourceTree = "<group>"; };
 		C9B6726417FE8BD600A41077 /* GTLServicePrediction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLServicePrediction.m; sourceTree = "<group>"; };
+		C9B672FD17FF38AA00A41077 /* DPDestinationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPDestinationTableViewController.h; sourceTree = "<group>"; };
+		C9B672FE17FF38AA00A41077 /* DPDestinationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPDestinationTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -441,6 +444,8 @@
 				735B143D17FE2C9B00DC611E /* DPAppDelegate.m */,
 				735B144217FE2C9B00DC611E /* DPMapViewController.h */,
 				735B144317FE2C9B00DC611E /* DPMapViewController.m */,
+				C9B672FD17FF38AA00A41077 /* DPDestinationTableViewController.h */,
+				C9B672FE17FF38AA00A41077 /* DPDestinationTableViewController.m */,
 				158E2AD917FE475300CD8F9F /* External Libraries */,
 				735B144517FE2C9B00DC611E /* Images.xcassets */,
 				735B143F17FE2C9B00DC611E /* Main.storyboard */,
@@ -854,6 +859,7 @@
 				158E2AE317FE499900CD8F9F /* DPBikeStationsList.m in Sources */,
 				735B144417FE2C9B00DC611E /* DPMapViewController.m in Sources */,
 				735B14A817FE8A3D00DC611E /* DPGoogleMapsInfoWindow.m in Sources */,
+				C9B672FF17FF38AA00A41077 /* DPDestinationTableViewController.m in Sources */,
 				735B143A17FE2C9B00DC611E /* main.m in Sources */,
 				5C79DFCE17FF164600A2339A /* TDArrow.m in Sources */,
 				C9B6726617FE8BD600A41077 /* GTLPredictionAnalyze.m in Sources */,
