@@ -48,37 +48,37 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		155D429617FE6F1B004AC59A /* PBXContainerItemProxy */ = {
+		155D42A917FE701C004AC59A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 155D428E17FE6F1A004AC59A /* Pods.xcodeproj */;
+			containerPortal = 155D42A117FE701C004AC59A /* Pods.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = AD10BC2EC9514D15A62690F9;
 			remoteInfo = Pods;
 		};
-		155D429817FE6F1B004AC59A /* PBXContainerItemProxy */ = {
+		155D42AB17FE701C004AC59A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 155D428E17FE6F1A004AC59A /* Pods.xcodeproj */;
+			containerPortal = 155D42A117FE701C004AC59A /* Pods.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = A610E87BE95341A19271869B;
 			remoteInfo = "Pods-AFNetworking";
 		};
-		155D429A17FE6F1B004AC59A /* PBXContainerItemProxy */ = {
+		155D42AD17FE701C004AC59A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 155D428E17FE6F1A004AC59A /* Pods.xcodeproj */;
+			containerPortal = 155D42A117FE701C004AC59A /* Pods.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 12E90E5E4A6A481FB1FD8AC2;
 			remoteInfo = "Pods-RestKit";
 		};
-		155D429C17FE6F1B004AC59A /* PBXContainerItemProxy */ = {
+		155D42AF17FE701C004AC59A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 155D428E17FE6F1A004AC59A /* Pods.xcodeproj */;
+			containerPortal = 155D42A117FE701C004AC59A /* Pods.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = CD846D2D764E4AC9A7189847;
 			remoteInfo = "Pods-SOCKit";
 		};
-		155D429E17FE6F1B004AC59A /* PBXContainerItemProxy */ = {
+		155D42B117FE701C004AC59A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 155D428E17FE6F1A004AC59A /* Pods.xcodeproj */;
+			containerPortal = 155D42A117FE701C004AC59A /* Pods.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 3B78B28BFA1742418D828C5A;
 			remoteInfo = "Pods-TransitionKit";
@@ -96,7 +96,7 @@
 		155D428817FE6C69004AC59A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		155D428A17FE6CA9004AC59A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		155D428C17FE6CB9004AC59A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		155D428E17FE6F1A004AC59A /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = ../Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		155D42A117FE701C004AC59A /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Pods.xcodeproj; sourceTree = "<group>"; };
 		158E2ADA17FE479700CD8F9F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		158E2ADB17FE479700CD8F9F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		158E2ADE17FE497900CD8F9F /* DPBikeStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPBikeStation.h; path = Models/DPBikeStation.h; sourceTree = "<group>"; };
@@ -186,14 +186,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		155D428F17FE6F1A004AC59A /* Products */ = {
+		155D42A217FE701C004AC59A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				155D429717FE6F1B004AC59A /* libPods.a */,
-				155D429917FE6F1B004AC59A /* libPods-AFNetworking.a */,
-				155D429B17FE6F1B004AC59A /* libPods-RestKit.a */,
-				155D429D17FE6F1B004AC59A /* libPods-SOCKit.a */,
-				155D429F17FE6F1B004AC59A /* libPods-TransitionKit.a */,
+				155D42AA17FE701C004AC59A /* libPods.a */,
+				155D42AC17FE701C004AC59A /* libPods-AFNetworking.a */,
+				155D42AE17FE701C004AC59A /* libPods-RestKit.a */,
+				155D42B017FE701C004AC59A /* libPods-SOCKit.a */,
+				155D42B217FE701C004AC59A /* libPods-TransitionKit.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -226,7 +226,7 @@
 				735B142C17FE2C9B00DC611E /* Frameworks */,
 				735B142B17FE2C9B00DC611E /* Products */,
 				3C5C74A7C943419B81E988FF /* Pods.xcconfig */,
-				155D428E17FE6F1A004AC59A /* Pods.xcodeproj */,
+				155D42A117FE701C004AC59A /* Pods.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -410,8 +410,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 155D428F17FE6F1A004AC59A /* Products */;
-					ProjectRef = 155D428E17FE6F1A004AC59A /* Pods.xcodeproj */;
+					ProductGroup = 155D42A217FE701C004AC59A /* Products */;
+					ProjectRef = 155D42A117FE701C004AC59A /* Pods.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -423,39 +423,39 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		155D429717FE6F1B004AC59A /* libPods.a */ = {
+		155D42AA17FE701C004AC59A /* libPods.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libPods.a;
-			remoteRef = 155D429617FE6F1B004AC59A /* PBXContainerItemProxy */;
+			remoteRef = 155D42A917FE701C004AC59A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		155D429917FE6F1B004AC59A /* libPods-AFNetworking.a */ = {
+		155D42AC17FE701C004AC59A /* libPods-AFNetworking.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libPods-AFNetworking.a";
-			remoteRef = 155D429817FE6F1B004AC59A /* PBXContainerItemProxy */;
+			remoteRef = 155D42AB17FE701C004AC59A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		155D429B17FE6F1B004AC59A /* libPods-RestKit.a */ = {
+		155D42AE17FE701C004AC59A /* libPods-RestKit.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libPods-RestKit.a";
-			remoteRef = 155D429A17FE6F1B004AC59A /* PBXContainerItemProxy */;
+			remoteRef = 155D42AD17FE701C004AC59A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		155D429D17FE6F1B004AC59A /* libPods-SOCKit.a */ = {
+		155D42B017FE701C004AC59A /* libPods-SOCKit.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libPods-SOCKit.a";
-			remoteRef = 155D429C17FE6F1B004AC59A /* PBXContainerItemProxy */;
+			remoteRef = 155D42AF17FE701C004AC59A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		155D429F17FE6F1B004AC59A /* libPods-TransitionKit.a */ = {
+		155D42B217FE701C004AC59A /* libPods-TransitionKit.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libPods-TransitionKit.a";
-			remoteRef = 155D429E17FE6F1B004AC59A /* PBXContainerItemProxy */;
+			remoteRef = 155D42B117FE701C004AC59A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
