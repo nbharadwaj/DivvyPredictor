@@ -8,6 +8,8 @@
 
 #import "DPMapViewController.h"
 #import "GMSMarkerOptions+MarkerType.h"
+#import "DPBikeStation.h"
+#import "DPBikeStationsList.h"
 
 @interface DPMapViewController ()
 
@@ -33,6 +35,56 @@
         self.locationManager = [[CLLocationManager alloc] init];
         self.locationManager.delegate = self;
     }
+    
+    [self loadStations];
+}
+
+- (void)loadStations
+{
+    RKObjectMapping *stationListMapping = [RKObjectMapping mappingForClass:[DPBikeStationsList class]];
+    [stationListMapping addAttributeMappingsFromArray:@[@"executionTime"]];
+    
+    RKObjectMapping *stationMapping = [RKObjectMapping mappingForClass:[DPBikeStation class]];
+    [stationMapping addAttributeMappingsFromDictionary:@{
+                                                         @"id": @"stationId",
+                                                         @"stationName": @"stationName",
+                                                         @"availableDocks": @"availableDocks",
+                                                         @"totalDocks": @"totalDocks",
+                                                         @"latitude": @"latitude",
+                                                         @"longitude": @"longitude",
+                                                         @"statusValue": @"statusValue",
+                                                         @"statusKey": @"statusKey",
+                                                         @"availableBikes": @"availableBikes",
+                                                         @"stAddress1": @"address1",
+                                                         @"stAddress2": @"address2",
+                                                         @"city": @"city",
+                                                         @"postalCode": @"postalCode",
+                                                         @"location": @"location",
+                                                         @"altitude": @"altitude",
+                                                         @"testStation": @"testStation",
+                                                         @"lastCommunicationTime": @"lastCommunicationTime",
+                                                         @"landMark": @"landmark"
+                                                         }];
+    
+    [stationListMapping addPropertyMapping:[RKRelationshipMapping relationshipMappingFromKeyPath:@"stationBeanList" toKeyPath:@"bikeStations" withMapping:stationMapping]];
+    
+    RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:stationListMapping method:RKRequestMethodGET pathPattern:nil keyPath:@"" statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
+    [RKMIMETypeSerialization registerClass:[RKNSJSONSerialization class] forMIMEType:@"text/html"];
+    
+    NSURL *URL = [NSURL URLWithString:@"http://divvybikes.com/stations/json"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+
+    RKObjectRequestOperation *objectRequestOperation = [[RKObjectRequestOperation alloc] initWithRequest:request responseDescriptors:@[ responseDescriptor ]];
+
+    [objectRequestOperation setCompletionBlockWithSuccess:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+        RKLogInfo(@"Load collection of stations: %@", mappingResult.array);
+//        DPBikeStationsList *stationList = [mappingResult.array firstObject];
+//        DPBikeStation *station = [stationList.bikeStations firstObject];
+    } failure:^(RKObjectRequestOperation *operation, NSError *error) {
+        RKLogError(@"Operation failed with error: %@", error);
+    }];
+    
+    [objectRequestOperation start];
 }
 
 - (void)didReceiveMemoryWarning
