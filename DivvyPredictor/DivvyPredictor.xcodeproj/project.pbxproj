@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15150D4317FF285C00AD0B5F /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15150D4217FF285C00AD0B5F /* GTMOAuth2ViewTouch.xib */; };
+		15150D4F17FF28BC00AD0B5F /* DivvyPrediction.m in Sources */ = {isa = PBXBuildFile; fileRef = 15150D4E17FF28BC00AD0B5F /* DivvyPrediction.m */; };
+		15150D5017FF296700AD0B5F /* libGTLTouchStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15150D3317FF032200AD0B5F /* libGTLTouchStaticLib.a */; };
 		155D428917FE6C69004AC59A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155D428817FE6C69004AC59A /* MobileCoreServices.framework */; };
 		155D428B17FE6CA9004AC59A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155D428A17FE6CA9004AC59A /* Security.framework */; };
 		155D428D17FE6CB9004AC59A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155D428C17FE6CB9004AC59A /* CFNetwork.framework */; };
@@ -60,7 +63,6 @@
 		C9B6726A17FE8BD600A41077 /* GTLPredictionOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B6726017FE8BD600A41077 /* GTLPredictionOutput.m */; };
 		C9B6726B17FE8BD600A41077 /* GTLQueryPrediction.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B6726217FE8BD600A41077 /* GTLQueryPrediction.m */; };
 		C9B6726C17FE8BD600A41077 /* GTLServicePrediction.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B6726417FE8BD600A41077 /* GTLServicePrediction.m */; };
-		C9B6728F17FE941700A41077 /* libGTLTouchStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B6728E17FE941700A41077 /* libGTLTouchStaticLib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +140,9 @@
 
 /* Begin PBXFileReference section */
 		15150D2917FF032200AD0B5F /* GTL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GTL.xcodeproj; path = ../GTL.xcodeproj; sourceTree = "<group>"; };
+		15150D4217FF285C00AD0B5F /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTMOAuth2ViewTouch.xib; sourceTree = "<group>"; };
+		15150D4D17FF28BC00AD0B5F /* DivvyPrediction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DivvyPrediction.h; sourceTree = "<group>"; };
+		15150D4E17FF28BC00AD0B5F /* DivvyPrediction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DivvyPrediction.m; sourceTree = "<group>"; };
 		155D428817FE6C69004AC59A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		155D428A17FE6CA9004AC59A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		155D428C17FE6CB9004AC59A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -243,7 +248,6 @@
 		C9B6726217FE8BD600A41077 /* GTLQueryPrediction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLQueryPrediction.m; sourceTree = "<group>"; };
 		C9B6726317FE8BD600A41077 /* GTLServicePrediction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLServicePrediction.h; sourceTree = "<group>"; };
 		C9B6726417FE8BD600A41077 /* GTLServicePrediction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLServicePrediction.m; sourceTree = "<group>"; };
-		C9B6728E17FE941700A41077 /* libGTLTouchStaticLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGTLTouchStaticLib.a; path = "../../../google-api-objectivec-client-read-only/Source/build/Debug-iphoneos/libGTLTouchStaticLib.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,7 +255,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9B6728F17FE941700A41077 /* libGTLTouchStaticLib.a in Frameworks */,
+				15150D5017FF296700AD0B5F /* libGTLTouchStaticLib.a in Frameworks */,
 				155D428D17FE6CB9004AC59A /* CFNetwork.framework in Frameworks */,
 				155D428B17FE6CA9004AC59A /* Security.framework in Frameworks */,
 				155D428917FE6C69004AC59A /* MobileCoreServices.framework in Frameworks */,
@@ -311,6 +315,8 @@
 		158E2ADD17FE494E00CD8F9F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				15150D4D17FF28BC00AD0B5F /* DivvyPrediction.h */,
+				15150D4E17FF28BC00AD0B5F /* DivvyPrediction.m */,
 				158E2ADE17FE497900CD8F9F /* DPBikeStation.h */,
 				158E2ADF17FE497900CD8F9F /* DPBikeStation.m */,
 				158E2AE117FE499900CD8F9F /* DPBikeStationsList.h */,
@@ -358,7 +364,6 @@
 		735B142C17FE2C9B00DC611E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C9B6728E17FE941700A41077 /* libGTLTouchStaticLib.a */,
 				155D428C17FE6CB9004AC59A /* CFNetwork.framework */,
 				155D428A17FE6CA9004AC59A /* Security.framework */,
 				155D428817FE6C69004AC59A /* MobileCoreServices.framework */,
@@ -553,6 +558,7 @@
 		C9B6726F17FE91A400A41077 /* PredictionAPI */ = {
 			isa = PBXGroup;
 			children = (
+				15150D4217FF285C00AD0B5F /* GTMOAuth2ViewTouch.xib */,
 				15150D2917FF032200AD0B5F /* GTL.xcodeproj */,
 				C9B6725417FE8BD600A41077 /* Generated */,
 				C9B6723417FE8AE700A41077 /* Headers */,
@@ -723,6 +729,7 @@
 				735B144117FE2C9B00DC611E /* Main.storyboard in Resources */,
 				735B146717FE2FB500DC611E /* GoogleMaps.bundle in Resources */,
 				735B14B117FE9AFC00DC611E /* navigationBarBackgroundRetro@2x.png in Resources */,
+				15150D4317FF285C00AD0B5F /* GTMOAuth2ViewTouch.xib in Resources */,
 				735B14B017FE9AFC00DC611E /* navigationBarBackgroundRetro.png in Resources */,
 				735B149017FE611500DC611E /* ios7_atm_orange_pin.png in Resources */,
 			);
@@ -790,6 +797,7 @@
 				5C79DFBF17FF0BDB00A2339A /* DPBikeStationSingleton.m in Sources */,
 				C9B6726A17FE8BD600A41077 /* GTLPredictionOutput.m in Sources */,
 				C9B6726B17FE8BD600A41077 /* GTLQueryPrediction.m in Sources */,
+				15150D4F17FF28BC00AD0B5F /* DivvyPrediction.m in Sources */,
 				158E2ADC17FE479700CD8F9F /* MBProgressHUD.m in Sources */,
 				735B14A617FE8A3D00DC611E /* BaseMapPopoverView.m in Sources */,
 				735B14AD17FE8B5700DC611E /* UIView+Utils.m in Sources */,
