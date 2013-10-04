@@ -13,6 +13,7 @@
 		158E2ADC17FE479700CD8F9F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 158E2ADB17FE479700CD8F9F /* MBProgressHUD.m */; };
 		158E2AE017FE497900CD8F9F /* DPBikeStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 158E2ADF17FE497900CD8F9F /* DPBikeStation.m */; };
 		158E2AE317FE499900CD8F9F /* DPBikeStationsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 158E2AE217FE499900CD8F9F /* DPBikeStationsList.m */; };
+		5C79DFBF17FF0BDB00A2339A /* DPBikeStationSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C79DFBE17FF0BDB00A2339A /* DPBikeStationSingleton.m */; };
 		735B142E17FE2C9B00DC611E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735B142D17FE2C9B00DC611E /* Foundation.framework */; };
 		735B143017FE2C9B00DC611E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735B142F17FE2C9B00DC611E /* CoreGraphics.framework */; };
 		735B143217FE2C9B00DC611E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735B143117FE2C9B00DC611E /* UIKit.framework */; };
@@ -148,6 +149,8 @@
 		158E2AE217FE499900CD8F9F /* DPBikeStationsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPBikeStationsList.m; path = Models/DPBikeStationsList.m; sourceTree = "<group>"; };
 		15BB436917FE748D00985A92 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = ../Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		3C5C74A7C943419B81E988FF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		5C79DFBD17FF0BDB00A2339A /* DPBikeStationSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPBikeStationSingleton.h; path = Models/DPBikeStationSingleton.h; sourceTree = "<group>"; };
+		5C79DFBE17FF0BDB00A2339A /* DPBikeStationSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPBikeStationSingleton.m; path = Models/DPBikeStationSingleton.m; sourceTree = "<group>"; };
 		735B142A17FE2C9B00DC611E /* DivvyPredictor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DivvyPredictor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		735B142D17FE2C9B00DC611E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		735B142F17FE2C9B00DC611E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -312,6 +315,8 @@
 				158E2ADF17FE497900CD8F9F /* DPBikeStation.m */,
 				158E2AE117FE499900CD8F9F /* DPBikeStationsList.h */,
 				158E2AE217FE499900CD8F9F /* DPBikeStationsList.m */,
+				5C79DFBD17FF0BDB00A2339A /* DPBikeStationSingleton.h */,
+				5C79DFBE17FF0BDB00A2339A /* DPBikeStationSingleton.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -782,6 +787,7 @@
 				735B143A17FE2C9B00DC611E /* main.m in Sources */,
 				C9B6726617FE8BD600A41077 /* GTLPredictionAnalyze.m in Sources */,
 				C9B6726C17FE8BD600A41077 /* GTLServicePrediction.m in Sources */,
+				5C79DFBF17FF0BDB00A2339A /* DPBikeStationSingleton.m in Sources */,
 				C9B6726A17FE8BD600A41077 /* GTLPredictionOutput.m in Sources */,
 				C9B6726B17FE8BD600A41077 /* GTLQueryPrediction.m in Sources */,
 				158E2ADC17FE479700CD8F9F /* MBProgressHUD.m in Sources */,

@@ -14,8 +14,10 @@
 @property (nonatomic, copy) NSString *stationName;
 @property (nonatomic, copy) NSString *availableDocks;
 @property (nonatomic, copy) NSString *totalDocks;
-@property (nonatomic, copy) NSString *latitude;
-@property (nonatomic, copy) NSString *longitude;
+@property (nonatomic, copy) NSString *latitudeString;
+@property (nonatomic, copy) NSString *longitudeString;
+@property (nonatomic, assign) double latitude;
+@property (nonatomic, assign) double longitude;
 @property (nonatomic, copy) NSString *statusValue;
 @property (nonatomic, copy) NSString *statusKey;
 @property (nonatomic, copy) NSString *availableBikes;
@@ -28,4 +30,5 @@
 @property (nonatomic, copy) NSString *testStation;
 @property (nonatomic, copy) NSString *lastCommunicationTime;
 @property (nonatomic, copy) NSString *landmark;
+@property (nonatomic, copy) NSString *distanceToBikeStationFromCurrentLocation;
 @end
