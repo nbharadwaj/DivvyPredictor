@@ -13,7 +13,8 @@
 #import "DPBikeStationsList.h"
 #import "DPBikeStationSingleton.h"
 
-@interface DPMapViewController ()
+@interface DPMapViewController () {
+}
 
 @property (weak, nonatomic) IBOutlet GMSMapView *googleMapView;
 @property (weak, nonatomic) IBOutlet UIButton *selectDestinationButton;
@@ -46,14 +47,23 @@
         self.bikeStations = [singleton.divvyDataSource objectForKey:kBikeStations];
         [self moveCameraPositionToLatitude:[(DPBikeStation *)[self.bikeStations objectAtIndex:0] latitude] toLongitude:[(DPBikeStation *)[self.bikeStations objectAtIndex:0] longitude] withZoomLevel:kDefaultZoomLevel];
         if([self.bikeStations count] > 0) {
+            int count = 1;
             for (DPBikeStation *bikeStation in self.bikeStations) {
-                CLLocationCoordinate2D location =  CLLocationCoordinate2DMake(bikeStation.latitude, bikeStation.longitude);
-                [self addPinToMap:self.googleMapView ofType:OrangePin atLocation:location withUserData:bikeStation];
+                if (bikeStation.distanceToBikeStationFromCurrentLocation < 1.0 && bikeStation.distanceToBikeStationFromCurrentLocation != 0.00 && count < 5) {
+                    CLLocationCoordinate2D location =  CLLocationCoordinate2DMake(bikeStation.latitude, bikeStation.longitude);
+                    [self addPinToMap:self.googleMapView ofType:OrangePin atLocation:location withUserData:bikeStation];
+                    count++;
+                }
             }
         }
     }];
+}
 
-    
+- (float)calculateDistanceFromLocation:(CLLocationCoordinate2D)location
+{
+    CLLocation *stationLocation = [[CLLocation alloc] initWithLatitude:location.latitude longitude:location.longitude];
+    CLLocationDistance distance = [stationLocation distanceFromLocation:self.googleMapView.myLocation];
+    return distance * 0.000621371;
 }
 
 - (void)loadStationsWithCompletionHandler:(void(^)())completionBlock
@@ -67,8 +77,8 @@
                                                          @"stationName": @"stationName",
                                                          @"availableDocks": @"availableDocks",
                                                          @"totalDocks": @"totalDocks",
-                                                         @"latitude": @"latitude",
-                                                         @"longitude": @"longitude",
+                                                         @"latitude": @"latitudeString",
+                                                         @"longitude": @"longitudeString",
                                                          @"statusValue": @"statusValue",
                                                          @"statusKey": @"statusKey",
                                                          @"availableBikes": @"availableBikes",
@@ -95,9 +105,12 @@
 
     [objectRequestOperation setCompletionBlockWithSuccess:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
         DPBikeStationSingleton *singleton = [DPBikeStationSingleton sharedManager];
+        for (DPBikeStation *bikeStation in [[mappingResult.array firstObject] bikeStations]) {
+            CLLocationCoordinate2D location =  CLLocationCoordinate2DMake(bikeStation.latitude, bikeStation.longitude);
+            bikeStation.distanceToBikeStationFromCurrentLocation = [self calculateDistanceFromLocation:location];
+        }
         [singleton.divvyDataSource setObject:[(DPBikeStationsList *)[mappingResult.array firstObject] bikeStations] forKey:kBikeStations];
         completionBlock();
-        RKLogInfo(@"Load collection of stations: %@", mappingResult.array);
     } failure:^(RKObjectRequestOperation *operation, NSError *error) {
         RKLogError(@"Operation failed with error: %@", error);
     }];
@@ -149,7 +162,7 @@
     infoWindow.addressLabel.text = bikeStation.stationName;
     infoWindow.numberOfBikesAvailable.text = bikeStation.availableBikes;
     infoWindow.numberOfDocksAvailable.text = bikeStation.availableDocks;
-    infoWindow.disctanceToStation.text = @"2.45";
+    infoWindow.disctanceToStation.text = [NSString stringWithFormat:@"%.2f", bikeStation.distanceToBikeStationFromCurrentLocation];
     return infoWindow;
 }
 @end

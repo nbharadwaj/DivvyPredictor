@@ -30,5 +30,5 @@
 @property (nonatomic, copy) NSString *testStation;
 @property (nonatomic, copy) NSString *lastCommunicationTime;
 @property (nonatomic, copy) NSString *landmark;
-@property (nonatomic, copy) NSString *distanceToBikeStationFromCurrentLocation;
+@property (nonatomic) float distanceToBikeStationFromCurrentLocation;
 @end
