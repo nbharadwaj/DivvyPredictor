@@ -449,7 +449,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/solsticemac/DivvyPredictor/DivvyPredictor,
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DivvyPredictor/DivvyPredictor-Prefix.pch";
@@ -466,7 +466,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/solsticemac/DivvyPredictor/DivvyPredictor,
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DivvyPredictor/DivvyPredictor-Prefix.pch";
@@ -537,6 +537,7 @@
 				735B145E17FE2C9C00DC611E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		735B145F17FE2C9C00DC611E /* Build configuration list for PBXNativeTarget "DivvyPredictorTests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +546,7 @@
 				735B146117FE2C9C00DC611E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
