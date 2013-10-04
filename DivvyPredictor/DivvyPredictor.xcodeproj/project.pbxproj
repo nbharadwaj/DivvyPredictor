@@ -63,6 +63,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		15150D3017FF032200AD0B5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15150D2917FF032200AD0B5F /* GTL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F38F6A60B66E91D00B24B81;
+			remoteInfo = GTLFramework;
+		};
+		15150D3217FF032200AD0B5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15150D2917FF032200AD0B5F /* GTL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F12027C11A4CA2F00BEB470;
+			remoteInfo = GTLTouchStaticLib;
+		};
+		15150D3417FF032200AD0B5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15150D2917FF032200AD0B5F /* GTL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F12027D11A4CA2F00BEB470;
+			remoteInfo = GTLUnitTests;
+		};
+		15150D3617FF032200AD0B5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15150D2917FF032200AD0B5F /* GTL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F1AD9020B71603F00DC0485;
+			remoteInfo = DevelopmentTestTool;
+		};
 		15BB437117FE748E00985A92 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 15BB436917FE748D00985A92 /* Pods.xcodeproj */;
@@ -105,37 +133,10 @@
 			remoteGlobalIDString = 735B142917FE2C9B00DC611E;
 			remoteInfo = DivvyPredictor;
 		};
-		C9B672BA17FEE0FC00A41077 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C9B672B317FEE0FB00A41077 /* GTL.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4F38F6A60B66E91D00B24B81;
-			remoteInfo = GTLFramework;
-		};
-		C9B672BC17FEE0FC00A41077 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C9B672B317FEE0FB00A41077 /* GTL.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4F12027C11A4CA2F00BEB470;
-			remoteInfo = GTLTouchStaticLib;
-		};
-		C9B672BE17FEE0FC00A41077 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C9B672B317FEE0FB00A41077 /* GTL.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4F12027D11A4CA2F00BEB470;
-			remoteInfo = GTLUnitTests;
-		};
-		C9B672C017FEE0FC00A41077 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C9B672B317FEE0FB00A41077 /* GTL.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4F1AD9020B71603F00DC0485;
-			remoteInfo = DevelopmentTestTool;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15150D2917FF032200AD0B5F /* GTL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GTL.xcodeproj; path = ../GTL.xcodeproj; sourceTree = "<group>"; };
 		155D428817FE6C69004AC59A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		155D428A17FE6CA9004AC59A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		155D428C17FE6CB9004AC59A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -240,7 +241,6 @@
 		C9B6726317FE8BD600A41077 /* GTLServicePrediction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLServicePrediction.h; sourceTree = "<group>"; };
 		C9B6726417FE8BD600A41077 /* GTLServicePrediction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLServicePrediction.m; sourceTree = "<group>"; };
 		C9B6728E17FE941700A41077 /* libGTLTouchStaticLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGTLTouchStaticLib.a; path = "../../../google-api-objectivec-client-read-only/Source/build/Debug-iphoneos/libGTLTouchStaticLib.a"; sourceTree = "<group>"; };
-		C9B672B317FEE0FB00A41077 /* GTL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GTL.xcodeproj; path = ../GTL.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +285,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15150D2A17FF032200AD0B5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15150D3117FF032200AD0B5F /* GTL.framework */,
+				15150D3317FF032200AD0B5F /* libGTLTouchStaticLib.a */,
+				15150D3517FF032200AD0B5F /* GTLUnitTests.octest */,
+				15150D3717FF032200AD0B5F /* DevelopmentTestTool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		158E2AD917FE475300CD8F9F /* External Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -447,6 +458,37 @@
 			name = Assets;
 			sourceTree = "<group>";
 		};
+		735B149317FE80CC00DC611E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				735B149E17FE89A800DC611E /* GoogleMapsInfoWindow */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		735B149E17FE89A800DC611E /* GoogleMapsInfoWindow */ = {
+			isa = PBXGroup;
+			children = (
+				735B149F17FE8A3D00DC611E /* BaseMapPopoverView.h */,
+				735B14A017FE8A3D00DC611E /* BaseMapPopoverView.m */,
+				735B14A117FE8A3D00DC611E /* BaseMapPopoverView.xib */,
+				735B14A217FE8A3D00DC611E /* BaseMapPopoverViewConstants.h */,
+				735B14A317FE8A3D00DC611E /* DPGoogleMapsInfoWindow.h */,
+				735B14A417FE8A3D00DC611E /* DPGoogleMapsInfoWindow.m */,
+				735B14A517FE8A3D00DC611E /* DPGoogleMapsInfoWindow.xib */,
+			);
+			name = GoogleMapsInfoWindow;
+			sourceTree = "<group>";
+		};
+		735B14AA17FE8B4900DC611E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				735B14AB17FE8B5700DC611E /* UIView+Utils.h */,
+				735B14AC17FE8B5700DC611E /* UIView+Utils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		C9B6723417FE8AE700A41077 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
@@ -506,53 +548,11 @@
 		C9B6726F17FE91A400A41077 /* PredictionAPI */ = {
 			isa = PBXGroup;
 			children = (
-				C9B672B317FEE0FB00A41077 /* GTL.xcodeproj */,
+				15150D2917FF032200AD0B5F /* GTL.xcodeproj */,
 				C9B6725417FE8BD600A41077 /* Generated */,
 				C9B6723417FE8AE700A41077 /* Headers */,
 			);
 			name = PredictionAPI;
-			sourceTree = "<group>";
-		};
-		C9B672B417FEE0FB00A41077 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C9B672BB17FEE0FC00A41077 /* GTL.framework */,
-				C9B672BD17FEE0FC00A41077 /* libGTLTouchStaticLib.a */,
-				C9B672BF17FEE0FC00A41077 /* GTLUnitTests.octest */,
-				C9B672C117FEE0FC00A41077 /* DevelopmentTestTool */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		735B149317FE80CC00DC611E /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				735B149E17FE89A800DC611E /* GoogleMapsInfoWindow */,
-			);
-			name = UI;
-			sourceTree = "<group>";
-		};
-		735B149E17FE89A800DC611E /* GoogleMapsInfoWindow */ = {
-			isa = PBXGroup;
-			children = (
-				735B149F17FE8A3D00DC611E /* BaseMapPopoverView.h */,
-				735B14A017FE8A3D00DC611E /* BaseMapPopoverView.m */,
-				735B14A117FE8A3D00DC611E /* BaseMapPopoverView.xib */,
-				735B14A217FE8A3D00DC611E /* BaseMapPopoverViewConstants.h */,
-				735B14A317FE8A3D00DC611E /* DPGoogleMapsInfoWindow.h */,
-				735B14A417FE8A3D00DC611E /* DPGoogleMapsInfoWindow.m */,
-				735B14A517FE8A3D00DC611E /* DPGoogleMapsInfoWindow.xib */,
-			);
-			name = GoogleMapsInfoWindow;
-			sourceTree = "<group>";
-		};
-		735B14AA17FE8B4900DC611E /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				735B14AB17FE8B5700DC611E /* UIView+Utils.h */,
-				735B14AC17FE8B5700DC611E /* UIView+Utils.m */,
-			);
-			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -623,8 +623,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = C9B672B417FEE0FB00A41077 /* Products */;
-					ProjectRef = C9B672B317FEE0FB00A41077 /* GTL.xcodeproj */;
+					ProductGroup = 15150D2A17FF032200AD0B5F /* Products */;
+					ProjectRef = 15150D2917FF032200AD0B5F /* GTL.xcodeproj */;
 				},
 				{
 					ProductGroup = 15BB436A17FE748D00985A92 /* Products */;
@@ -640,6 +640,34 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		15150D3117FF032200AD0B5F /* GTL.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GTL.framework;
+			remoteRef = 15150D3017FF032200AD0B5F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		15150D3317FF032200AD0B5F /* libGTLTouchStaticLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGTLTouchStaticLib.a;
+			remoteRef = 15150D3217FF032200AD0B5F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		15150D3517FF032200AD0B5F /* GTLUnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GTLUnitTests.octest;
+			remoteRef = 15150D3417FF032200AD0B5F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		15150D3717FF032200AD0B5F /* DevelopmentTestTool */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = DevelopmentTestTool;
+			remoteRef = 15150D3617FF032200AD0B5F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		15BB437217FE748E00985A92 /* libPods.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -673,34 +701,6 @@
 			fileType = archive.ar;
 			path = "libPods-TransitionKit.a";
 			remoteRef = 15BB437917FE748E00985A92 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C9B672BB17FEE0FC00A41077 /* GTL.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GTL.framework;
-			remoteRef = C9B672BA17FEE0FC00A41077 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C9B672BD17FEE0FC00A41077 /* libGTLTouchStaticLib.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libGTLTouchStaticLib.a;
-			remoteRef = C9B672BC17FEE0FC00A41077 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C9B672BF17FEE0FC00A41077 /* GTLUnitTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = GTLUnitTests.octest;
-			remoteRef = C9B672BE17FEE0FC00A41077 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C9B672C117FEE0FC00A41077 /* DevelopmentTestTool */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = DevelopmentTestTool;
-			remoteRef = C9B672C017FEE0FC00A41077 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -928,7 +928,7 @@
 				INFOPLIST_FILE = "DivvyPredictor/DivvyPredictor-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/nikhilbharadwaj/DivvyPredictor/DivvyPredictor/DivvyPredictor,
+					"\"$(SRCROOT)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -966,7 +966,7 @@
 				INFOPLIST_FILE = "DivvyPredictor/DivvyPredictor-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/nikhilbharadwaj/DivvyPredictor/DivvyPredictor/DivvyPredictor,
+					"\"$(SRCROOT)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
