@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		155D428917FE6C69004AC59A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155D428817FE6C69004AC59A /* MobileCoreServices.framework */; };
+		155D428B17FE6CA9004AC59A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155D428A17FE6CA9004AC59A /* Security.framework */; };
+		155D428D17FE6CB9004AC59A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155D428C17FE6CB9004AC59A /* CFNetwork.framework */; };
 		158E2ADC17FE479700CD8F9F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 158E2ADB17FE479700CD8F9F /* MBProgressHUD.m */; };
 		158E2AE017FE497900CD8F9F /* DPBikeStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 158E2ADF17FE497900CD8F9F /* DPBikeStation.m */; };
 		158E2AE317FE499900CD8F9F /* DPBikeStationsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 158E2AE217FE499900CD8F9F /* DPBikeStationsList.m */; };
@@ -41,6 +44,7 @@
 		735B148C17FE5DDA00DC611E /* GMSMarkerOptions+MarkerType.m in Sources */ = {isa = PBXBuildFile; fileRef = 735B148B17FE5DDA00DC611E /* GMSMarkerOptions+MarkerType.m */; };
 		735B149017FE611500DC611E /* ios7_atm_orange_pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 735B148E17FE611500DC611E /* ios7_atm_orange_pin.png */; };
 		735B149117FE611500DC611E /* ios7_atm_orange_pin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 735B148F17FE611500DC611E /* ios7_atm_orange_pin@2x.png */; };
+		83EFAA7C0BC949C99E73A4F0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC38900F59F24241ACD5C214 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,12 +58,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		155D428817FE6C69004AC59A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		155D428A17FE6CA9004AC59A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		155D428C17FE6CB9004AC59A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		158E2ADA17FE479700CD8F9F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		158E2ADB17FE479700CD8F9F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		158E2ADE17FE497900CD8F9F /* DPBikeStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPBikeStation.h; path = Models/DPBikeStation.h; sourceTree = "<group>"; };
 		158E2ADF17FE497900CD8F9F /* DPBikeStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPBikeStation.m; path = Models/DPBikeStation.m; sourceTree = "<group>"; };
 		158E2AE117FE499900CD8F9F /* DPBikeStationsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPBikeStationsList.h; path = Models/DPBikeStationsList.h; sourceTree = "<group>"; };
 		158E2AE217FE499900CD8F9F /* DPBikeStationsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPBikeStationsList.m; path = Models/DPBikeStationsList.m; sourceTree = "<group>"; };
+		3C5C74A7C943419B81E988FF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		735B142A17FE2C9B00DC611E /* DivvyPredictor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DivvyPredictor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		735B142D17FE2C9B00DC611E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		735B142F17FE2C9B00DC611E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -98,6 +106,7 @@
 		735B148B17FE5DDA00DC611E /* GMSMarkerOptions+MarkerType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GMSMarkerOptions+MarkerType.m"; sourceTree = "<group>"; };
 		735B148E17FE611500DC611E /* ios7_atm_orange_pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ios7_atm_orange_pin.png; path = Assets/ios7_atm_orange_pin.png; sourceTree = "<group>"; };
 		735B148F17FE611500DC611E /* ios7_atm_orange_pin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ios7_atm_orange_pin@2x.png"; path = "Assets/ios7_atm_orange_pin@2x.png"; sourceTree = "<group>"; };
+		AC38900F59F24241ACD5C214 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				155D428D17FE6CB9004AC59A /* CFNetwork.framework in Frameworks */,
+				155D428B17FE6CA9004AC59A /* Security.framework in Frameworks */,
+				155D428917FE6C69004AC59A /* MobileCoreServices.framework in Frameworks */,
 				735B147F17FE303F00DC611E /* SystemConfiguration.framework in Frameworks */,
 				735B147D17FE303700DC611E /* QuartzCore.framework in Frameworks */,
 				735B147B17FE302F00DC611E /* OpenGLES.framework in Frameworks */,
@@ -121,6 +133,7 @@
 				735B143217FE2C9B00DC611E /* UIKit.framework in Frameworks */,
 				735B146517FE2F0300DC611E /* GoogleMaps.framework in Frameworks */,
 				735B142E17FE2C9B00DC611E /* Foundation.framework in Frameworks */,
+				83EFAA7C0BC949C99E73A4F0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +177,7 @@
 				735B145217FE2C9B00DC611E /* DivvyPredictorTests */,
 				735B142C17FE2C9B00DC611E /* Frameworks */,
 				735B142B17FE2C9B00DC611E /* Products */,
+				3C5C74A7C943419B81E988FF /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,6 +193,9 @@
 		735B142C17FE2C9B00DC611E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				155D428C17FE6CB9004AC59A /* CFNetwork.framework */,
+				155D428A17FE6CA9004AC59A /* Security.framework */,
+				155D428817FE6C69004AC59A /* MobileCoreServices.framework */,
 				735B147E17FE303F00DC611E /* SystemConfiguration.framework */,
 				735B147C17FE303700DC611E /* QuartzCore.framework */,
 				735B147A17FE302F00DC611E /* OpenGLES.framework */,
@@ -197,6 +214,7 @@
 				735B142F17FE2C9B00DC611E /* CoreGraphics.framework */,
 				735B143117FE2C9B00DC611E /* UIKit.framework */,
 				735B144C17FE2C9B00DC611E /* XCTest.framework */,
+				AC38900F59F24241ACD5C214 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -282,9 +300,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 735B145C17FE2C9C00DC611E /* Build configuration list for PBXNativeTarget "DivvyPredictor" */;
 			buildPhases = (
+				326721300E234731B7101731 /* Check Pods Manifest.lock */,
 				735B142617FE2C9B00DC611E /* Sources */,
 				735B142717FE2C9B00DC611E /* Frameworks */,
 				735B142817FE2C9B00DC611E /* Resources */,
+				FE9F6D7260934295AC984DFC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -370,6 +390,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		326721300E234731B7101731 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FE9F6D7260934295AC984DFC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		735B142617FE2C9B00DC611E /* Sources */ = {
@@ -508,6 +561,7 @@
 		};
 		735B145D17FE2C9C00DC611E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C5C74A7C943419B81E988FF /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -525,6 +579,7 @@
 		};
 		735B145E17FE2C9C00DC611E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C5C74A7C943419B81E988FF /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
